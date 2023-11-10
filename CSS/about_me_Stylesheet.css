@@ -285,7 +285,19 @@ header{
 }
 
 @media all and ( max-width: 800px)and (min-width: 501px) {
-
+    #mob-nav {
+        display: none;
+    }
+    #nav1 {
+        display: none;
+    }
+    #btn-on {
+        display: block;
+        width: 8vw;
+        left: 86vw;
+        position: relative;
+        top:2vh;
+    }
     #aboutme1{
         display: none;
     }

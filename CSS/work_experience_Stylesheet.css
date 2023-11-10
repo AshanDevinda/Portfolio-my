@@ -1,0 +1,391 @@
+#Ma3{
+    display: none;
+}
+#Ma2{
+    display: none;
+}
+#Ma4{
+    display: none;
+}
+body{
+    background-color: #001233;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header>nav{
+    position: absolute;
+    /*right: vw;*/
+    height: 5vw;
+    width: 100vw;
+    bottom: -5vh;
+    background-color: #001233;
+    /*z-index: 999999999999999999;*/
+}
+header{
+    position: fixed;
+    top: 20px;
+    z-index: 9999999999999;
+
+}
+#nav1>a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #898989;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0px 10px;
+    margin: 0 10px;
+    position: relative;
+    left: 45vw;
+    top: 8vh;
+}
+#nav1 a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+#sec1 {
+    position: relative;
+    top: 20px;
+    width: 100vw;
+    height: 90vh;
+}
+#sec1>img{
+    position: relative;
+    top: 5vw;
+    width: 40vw;
+    left: 3vw;
+}
+
+#sec1>span {
+    position: absolute;
+    color: white;
+    font-size: 23px;
+    width: 35vw;
+    height: fit-content;
+    left: 40vw;
+    top: 3vw;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+}
+
+#sec2 {
+    position: relative;
+    top:30px;
+    width: 100vw;
+    height: 90vh;
+}
+#sec2>img{
+    position: relative;
+    top: 10vw;
+    width: 40vw;
+    left: 3vw;
+}
+#sec2>span {
+    position: absolute;
+    color: white;
+    font-size: 23px;
+    width: 35vw;
+    height: fit-content;
+    left: 40vw;
+    top: 13vw;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+}
+
+#sec3 {
+    position: relative;
+    top:40px;
+    width: 100vw;
+    height: 90vh;
+}
+#sec3>img{
+    position: relative;
+    top: 15vw;
+    left: 3vw;
+}
+#sec3>span {
+    position: absolute;
+    color: white;
+    font-size: 23px;
+    width: 35vw;
+    height: fit-content;
+    left: 40vw;
+    top: 23vw;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+}
+#mob-nav>ul {
+    list-style: none;
+    margin: 0;
+}
+#mob-nav>ul>li{
+    margin-bottom: 1vh;
+}
+#mob-nav {
+    display: none;
+    background-color: lightgray;
+    position: absolute;
+    width: 27vw;
+    height: 30vh;
+    top: 11vh;
+    left: 65vw;
+}
+#header>.nav-icon {
+    height: fit-content;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.button {
+    width: 40px;
+    height: 40px;
+    background-image:url("../assets/icons8-menu-50.png");
+    background-position: center;
+    border: none;
+    background-color: black;
+    z-index: 111111111111111111111;
+}
+#btn-on {
+    display: none;
+}
+#btn-off {
+    display: none;
+    position: relative;
+    left: 85vw;
+    top: 2vh;
+    width:8vw ;
+}
+
+
+@media all and ( max-width: 500px)and (min-width: 0px) {
+    #mob-nav {
+        display: none;
+    }
+    #nav1 {
+        display: none;
+    }
+    #btn-on {
+        display: block;
+        width: 8vw;
+        left: 86vw;
+        position: relative;
+        top:2vh;
+
+    }
+    #Ma1 {
+        display: none;
+    }
+    #Ma3{
+        display: none;
+    }
+    #Ma4{
+        display: none;
+    }
+    #Ma2 {
+        display: block;
+    }
+    #sec10 > img {
+        width: 75vw;
+        position: relative;
+        top: 27vw;
+        left: 11vw;
+    }
+    #sec10 >div{
+        width: 80%;
+        height: 20vw;
+        margin-left: 10vw;
+        position: relative;
+        top: 29vw;
+    }
+    #sec10 >div> span {
+        color: white;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+    #sec20 > img {
+        position: relative;
+        top: 32vw;
+        left: -5vw;
+        width: 97vw;
+    }
+    #sec20>div{
+        width: 80%;
+        height: 20vw;
+        margin-left: 10vw;
+        position: relative;
+        top: 20vw;
+    }
+    #sec20 >div> span {
+        color: white;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+    #sec30 > img {
+        position: relative;
+        width: 97vw;
+        top: 18vw;
+        right: 1vw;
+    }
+    #sec30>div{
+        width: 90%;
+        height: 50vw;
+        margin-left: 5vw;
+        position: relative;
+        top: 14vw;
+    }
+    #sec30>div > span {
+        color: white;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+@media all and ( max-width: 800px)and (min-width: 501px) {
+    #Ma1{
+        display: none;
+    }
+    #Ma2{
+        display: none;
+    }
+    #Ma4{
+        display: none;
+    }
+    #Ma3{
+        display: block;
+    }
+    #sec100 > img {
+        width: 44vw;
+        position: relative;
+        top: 13vw;
+        left: 5vw;
+    }
+    #sec100 >div{
+        width: 40vw;
+        position: relative;
+        left: 52vw;
+        bottom: 17vw;
+    }
+    #sec100 >div> span {
+        color: white;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+    #sec200 > img {
+        width: 53vw;
+        position: relative;
+        top: 7vw;
+        left: 1vw;
+    }
+    #sec200>div{
+        width: 40vw;
+        position: relative;
+        left: 54vw;
+        bottom: 30vw;
+    }
+    #sec200 >div> span {
+        color: white;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+    #sec300 > img {
+        width: 53vw;
+        position: relative;
+        bottom: 7vw;
+        left: 3vw;
+    }
+    #sec300>div{
+        width: 40vw;
+        position: relative;
+        bottom: 42vw;
+        left: 51vw;
+    }
+    #sec300>div > span {
+        color: white;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+@media all and ( max-width: 1030px)and (min-width: 801px){
+    #Ma1{
+        display: none;
+    }
+    #Ma2{
+        display: none;
+    }
+    #Ma3{
+        display: none;
+    }
+    #Ma4{
+        display: block;
+    }
+    #sec1000 > img {
+        width: 43vw;
+        position: relative;
+        top: 11vw;
+        left: 6vw;
+    }
+    #sec1000 >div{
+        width: 49vw;
+        position: relative;
+        left: 48vw;
+        bottom: 15vw;
+    }
+    #sec1000 >div> span {
+        color: white;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+    #sec2000 > img {
+        width: 51vw;
+        position: relative;
+        top: 10vw;
+        left: 1vw;
+    }
+    #sec2000>div{
+        width: 49vw;
+        position: relative;
+        left: 50vw;
+        bottom: 21vw;
+
+    }
+    #sec2000 >div> span {
+        color: white;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+    #sec3000 > img {
+        width: 51vw;
+        position: relative;
+        left: 3vw;
+        top: 5vw;
+
+    }
+    #sec3000>div{
+        width: 49vw;
+        position: relative;
+        bottom: 25vw;
+        left: 47vw;
+    }
+    #sec3000>div > span {
+        color: white;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+}

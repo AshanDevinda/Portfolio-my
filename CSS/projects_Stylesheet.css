@@ -1,0 +1,441 @@
+body{
+    background-color: #001233;
+}
+#nav1 a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+header>nav{
+    position: absolute;
+    /*right: vw;*/
+    height: 5vw;
+    width: 100vw;
+    bottom: -5vh;
+    background-color: #001233;
+    /*z-index: 999999999999999999;*/
+}
+header{
+    position: fixed;
+    top: 20px;
+    z-index: 9999999999999;
+
+}
+#nav1>a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #898989;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0px 10px;
+    margin: 0 10px;
+    position: relative;
+    left: 45vw;
+    top: 8vh;
+}
+#p1{
+    position: relative;
+    top: 7vw;
+    /*margin-top: 4vw;*/
+    color: white;
+    font-size: 2vw;
+    margin-left: 17vw;
+}
+
+#p1>h4{
+    color: #FF595A;
+    position: relative;
+    /*top:0;*/
+    /*bottom: 10vw;*/
+}
+#p1>h6{
+    position: relative;
+    /*top: 0;*/
+    bottom: 2vw;
+}
+#p1>a>h5{
+    color: #CAC0B3;
+    font-size: 1.2vw;
+    position: relative;
+    bottom: 4vw;
+}
+#p2{
+    position: relative;
+    top: 10vw;
+    /*margin-top: 4vw;*/
+    color: white;
+    font-size: 2vw;
+    margin-left: 17vw;
+}
+#p2>h4{
+    color: #FF595A;
+}
+#p2>h6{
+    position: relative;
+    bottom: 2vw;
+}
+
+#p2>a>h5{
+    color: #CAC0B3;
+    font-size: 1.2vw;
+    position: relative;
+    bottom: 4vw;
+}
+#p3{
+    position: relative;
+    top: 13vw;
+    /*margin-top: 4vw;*/
+    color: white;
+    font-size: 2vw;
+    margin-left: 17vw;
+}
+#p3>h4{
+    color: #FF595A;
+}
+#p3>h6{
+    position: relative;
+    bottom: 2vw;
+
+}
+#p3>a>h5{
+    color: #CAC0B3;
+    font-size: 1.2vw;
+    position: relative;
+    bottom: 4vw;
+}
+#text1{
+    /*font-size: 1em;*/
+    /*letter-spacing: 5px;*/
+    font-family: monospace;
+    font-size: 20px;
+    border-right: 5px solid;
+    width: 35%;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 8s steps(30),
+    cursor.4s step-end infinite Alternate;
+    color:  #81C6E8;
+}
+@keyframes cursor {
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing {
+    from{
+        width: 0
+    }
+}
+#text2{
+    font-family: monospace;
+    font-size: 20px;
+    border-right: 5px solid;
+    width: 20%;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 10s steps(16),
+    cursor.4s step-end infinite Alternate;
+    color:  #81C6E8;
+}
+#text3{
+    font-family: monospace;
+    font-size: 20px;
+    border-right: 5px solid;
+    width: 35%;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 8s steps(32),
+    cursor.4s step-end infinite Alternate;
+    color: #81C6E8;
+}
+#mob-nav>ul {
+    list-style: none;
+    margin: 0;
+}
+#mob-nav>ul>li{
+    margin-bottom: 1vh;
+}
+#mob-nav {
+    display: none;
+    background-color: lightgray;
+    position: absolute;
+    width: 27vw;
+    height: 30vh;
+    top: 11vh;
+    left: 65vw;
+}
+#header>.nav-icon {
+    height: fit-content;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.button {
+    width: 40px;
+    height: 40px;
+    background-image:url("../assets/icons8-menu-50.png");
+    background-position: center;
+    border: none;
+    background-color: black;
+    z-index: 111111111111111111111;
+}
+#btn-on {
+    display: none;
+}
+#btn-off {
+    display: none;
+    position: relative;
+    left: 85vw;
+    top: 2vh;
+    width:8vw ;
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+
+@media all and ( max-width: 500px)and (min-width: 0px){
+    #mob-nav {
+        display: none;
+    }
+    #nav1 {
+        display: none;
+    }
+    #btn-on {
+        display: block;
+        width: 8vw;
+        left: 86vw;
+        position: relative;
+        top:2vh;
+
+    }
+
+    #p1>img{
+        width: 73vw;
+        position: relative;
+        right: 5vw;
+        top: 5vw;
+    }
+    #p1>h4{
+        font-size: 4vw;
+        position: relative;
+        top: 3vw;
+        right: 5vw;
+    }
+    #p1>h6{
+        position: relative;
+        right: 5vw;
+        font-size: 3.5vw;
+    }
+    #p1>a>h5{
+        position: relative;
+        font-size: 2vw;
+        right: 5vw;
+        bottom: 7vw;
+    }
+    #p2>img{
+        width: 73vw;
+        position: relative;
+        right: 6vw;
+    }
+    #p2>h4{
+        font-size: 4vw;
+        position: relative;
+        right: 5vw;
+    }
+    #p2>h6{
+        position: relative;
+        font-size: 3.5vw;
+        right: 5vw;
+        bottom: 5vw;
+    }
+    #p2>a>h5{
+        position: relative;
+        font-size: 2vw;
+        bottom: 10vw;
+        right: 5vw;
+    }
+    #p3>img{
+        width: 73vw;
+        position: relative;
+        right: 5vw;
+    }
+    #p3>h4{
+        position: relative;
+        font-size: 4vw;
+        right: 5vw;
+    }
+    #p3>h6{
+        position: relative;
+        font-size: 3.5vw;
+        right: 5vw;
+        bottom: 6vw;
+    }
+    #p3>a>h5{
+        font-size: 2.5vw;
+        position: relative;
+        bottom: 11vw;
+        right: 5vw;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+@media all and ( max-width: 800px)and (min-width: 501px) {
+    #p1>img{
+        width: 75vw;
+        position: relative;
+        right: 6vw;
+        top: 3vw;
+    }
+    #p1>h4{
+        font-size: 3vw;
+        position: relative;
+        right: 6vw;
+    }
+    #p1>h6{
+        position: relative;
+        right: 6vw;
+        bottom: 4vw;
+        font-size: 2.45vw;
+    }
+    #p1>a>h5{
+        font-size: 1.8vw;
+        position: relative;
+        bottom: 8vw;
+        right: 6vw;
+    }
+    #p2>img{
+        width: 75vw;
+        position: relative;
+        right: 6vw;
+        bottom: 3vw;
+    }
+    #p2>h4{
+        font-size: 3vw;
+        position: relative;
+        bottom: 5vw;
+        right: 6vw;
+    }
+    #p2>h6{
+        font-size: 2.3vw;
+        position: relative;
+        bottom: 9vw;
+        right: 6vw;
+    }
+    #p2>a>h5{
+        font-size: 1.8vw;
+        position: relative;
+        bottom: 13vw;
+        right: 6vw;
+    }
+    #p3>img{
+        width: 75vw;
+        position: relative;
+        right: 7vw;
+        bottom: 8vw;
+    }
+    #p3>h4{
+        font-size: 3vw;
+        position: relative;
+        bottom: 10vw;
+        right: 7vw;
+    }
+    #p3>h6{
+        font-size: 2.3vw;
+        position: relative;
+        bottom: 14vw;
+        right: 7vw;
+    }
+    #p3>a>h5{
+        font-size: 1.8vw;
+        position: relative;
+        right: 7vw;
+        bottom: 18vw;
+    }
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+@media all and ( max-width: 1030px)and (min-width: 801px) {
+    #p1>img{
+        width: 78vw;
+        position: relative;
+        right: 6vw;
+        top: 2vw;
+    }
+    #p1>h4{
+        font-size: 2.7vw;
+        position: relative;
+        right: 6vw;
+    }
+    #p1>h6 {
+        font-size: 2vw;
+        position: relative;
+        right: 6vw;
+        bottom: 3vw;
+    }
+    #p1>a>h5{
+        font-size: 1.7vw;
+        position: relative;
+        right: 6vw;
+        bottom: 6vw;
+    }
+    #p2>img{
+        width: 78vw;
+        position: relative;
+        right: 7vw;
+        bottom: 4vw;
+    }
+    #p2>h4{
+        font-size: 2.7vw;
+        position: relative;
+        right: 7vw;
+        bottom: 6vw;
+    }
+    #p2>h6{
+        font-size: 2vw;
+        position: relative;
+        bottom: 9vw;
+        right: 7vw;
+    }
+    #p2>a>h5{
+        font-size: 1.5vw;
+        position: relative;
+        right: 7vw;
+        bottom: 12vw;
+    }
+    #p3>img{
+        width: 78vw;
+        position: relative;
+        right: 7vw;
+        bottom: 8vw;
+    }
+    #p3>h4{
+        font-size: 2.7vw;
+        position: relative;
+        right: 7vw;
+        bottom: 10vw;
+    }
+    #p3>h6{
+        font-size: 2vw;
+        position: relative;
+        right: 7vw;
+        bottom: 14vw;
+    }
+    #p3>a>h5{
+        font-size: 1.5vw;
+        position: relative;
+        bottom: 17vw;
+        right: 7vw;
+    }
+}

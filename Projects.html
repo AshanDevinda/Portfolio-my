@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Application</title>
+    <link rel="icon" type="image/x-icon" href="assets\favicon.ico">
+
+    <meta name="keyword" content="java,html,css">
+    <meta name="description" content="How to build up a portfolio">
+    <meta name="author" content="Darshana" >
+    <meta name="viewport" content="width=device-width",initial-scale="1.0"/>
+
+    <link rel="stylesheet" href="assets/normalize/normalize.css">
+    <link rel="stylesheet" href="CSS/projects_Stylesheet.css">
+    <br>
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+<header>
+    <nav  id="nav1">
+        <a href="index.html" target="_blank" >Home</a>
+        <a href="About%20Me.html" target="_blank">About Me</a>
+        <a href="Gallery.html" target="_blank">Gallery</a>
+        <a href="Projects.html" target="_blank">Projects</a>
+        <a href="Work%20Experience.html" target="_blank">Working Experience</a>
+        <a href="Assignment.html" target="_blank">Assignment</a>
+    </nav>
+
+
+    </nav>
+    <div id="btn-on" class="nav-icon">
+        <button class="button"></button>
+    </div>
+    <div id="btn-off" class="nav-icon">
+        <button class="button" ></button>
+    </div>
+    <nav id="mob-nav">
+        <ul>
+            <li><a ><u>Projects  </u></a></li>
+            <li><a href="About%20Me.html">About Me  </a></li>
+            <li><a href="Gallery.html">Gallery </a></li>
+            <li><a href="index.html" >Projects</a></li>
+            <li><a href="Work%20Experience.html" >Work Experience</a></li>
+            <li><a href="Assignment.html" >Assignment</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<div id="p1">
+    <img src="assets/Projects/Screenshot%202023-07-10%20020838.png" alt="" width="800" data-aos="fade-right"
+         data-aos-offset="300"
+         data-aos-easing="ease-in-sine">
+    <h4>Project Name</h4>
+    <h6 id="text1">Fuel Station Management System</h6>
+    <a href="https://github.com/AshanDevinda/FuelStation" target="_blank"><h5>More Details</h5></a>
+</div>
+
+<div id="p2">
+    <img src="assets/Projects/Screenshot%202023-07-14%20014327.png" alt="" width="800" data-aos="fade-right"
+         data-aos-offset="300"
+         data-aos-easing="ease-in-sine">
+    <h4>Project Name</h4>
+    <h6 id="text2">Chat Application</h6>
+    <a href="https://github.com/AshanDevinda/ChatApp" target="_blank"> <h5>More Details</h5></a>
+</div>
+
+<div id="p3">
+    <img src="assets/Projects/WhatsApp%20Image%202023-07-14%20at%2021.51.35.jpeg" alt="" width="800" data-aos="fade-right"
+         data-aos-offset="300"
+         data-aos-easing="ease-in-sine">
+    <h4>Project Name</h4>
+    <h6 id="text3">Dumindu Mobile Management System</h6>
+    <a href="https://github.com/AshanDevinda/DuminduMobile" target="_blank"><h5>More Details</h5></a>
+</div>
+
+<script src="assets/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    $("#btn-on").on('click', () => {
+        $("#mob-nav").css("display","block");
+        $("#btn-on").css("display","none");
+        $("#btn-off").css("display","block");
+    });
+    $("#btn-off").on('click', () => {
+        $("#mob-nav").css("display","none");
+        $("#btn-off").css("display","none");
+        $("#btn-on").css("display","block");
+    });
+    AOS.init();
+</script>
+</body>
+</html>

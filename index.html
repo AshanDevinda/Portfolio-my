@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Application</title>
+    <link rel="icon" type="image/x-icon" href="assets\favicon.ico">
+
+    <meta name="keyword" content="java,html,css">
+    <meta name="description" content="How to build up a portfolio">
+    <meta name="author" content="Darshana" >
+    <meta name="viewport" content="width=device-width",initial-scale="1.0"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trirong&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/normalize/normalize.css">
+    <link rel="stylesheet" href="CSS/home_Stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/Hover-master/Hover-master/css/hover.css">
+
+</head>
+<body>
+<header>
+    <nav id="nav1">
+        <a href="index.html" target="_blank" >Home</a>
+        <a href="About%20Me.html" target="_blank">About Me</a>
+        <a href="Gallery.html" target="_blank">Gallery</a>
+        <a href="Projects.html" target="_blank">Projects</a>
+        <a href="Work%20Experience.html" target="_blank">Working Experience</a>
+        <a href="Assignment.html" target="_blank">Assignment</a>
+    </nav>
+
+    </nav>
+    <div id="btn-on" class="nav-icon">
+        <button class="button"></button>
+    </div>
+    <div id="btn-off" class="nav-icon">
+        <button class="button" ></button>
+    </div>
+    <nav id="mob-nav">
+        <ul>
+            <li><a ><u>Home  </u></a></li>
+            <li><a href="About%20Me.html">About Me  </a></li>
+            <li><a href="Gallery.html">Gallery </a></li>
+            <li><a href="Projects.html" >Projects</a></li>
+            <li><a href="Work%20Experience.html" >Work Experience</a></li>
+            <li><a href="Assignment.html" >Assignment</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<section id="l10">
+<div id="div2" >
+<img  src="assets/ashan.jpeg" alt="" width="400" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"> >
+</div>
+
+<div id="div1">
+    <h1 data-text="Ashan Devinda...">Ashan Devinda</h1>
+    <p id="text1">Hello, I am Ashan Devinda, a trainee software engineer.</p>
+    <a href="assets/CV/Screenshot%202023-08-09%20212941.png" target="_blank" download id="ani1">
+        <span></span>
+        <span ></span>
+        <span></span>
+        <span></span>
+        Download CV
+    </a>
+</div>
+</section>
+
+<footer>
+        <span id="fs1">Contact Me : </span>
+        <span id="fs2">+94787535702 </span>
+        <span id="fs6">0273008001</span>
+        <span id="fs3">E-mail</span>
+        <span id="fs7">ashandevinda62@gmail.com</span>
+        <span id="fs5">No 02, Rajamawatha, Dimbulagala, Polonnaruwa</span>
+         <img src="assets/Footer/add.png" alt="" id="fs4">
+    <section id="fi">
+        <a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="assets/icons8-facebook-48%20(2).png" alt="" class="hvr-back-puls" id="fi1"></a>
+        <a href="https://wa.me/+94787535702"><img src="assets/icons8-whatsapp-48%20(1).png" alt="" id="fi2"></a>
+        <a href="https://github.com/AshanDevinda"><img src="assets/icons8-github-50.png" alt="" id="fi3"></a>
+        <a href="https://twitter.com/home"><img src="assets/icons8-twitter-48%20(1).png" alt="" id="fi4"></a>
+        <a href="https://www.tiktok.com/foryou?lang=en"><img src="assets/home/tiktok.png" alt="" id="fi5"></a>
+    </section>
+</footer>
+
+<script src="assets/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    $("#btn-on").on('click', () => {
+        $("#mob-nav").css("display","block");
+        $("#btn-on").css("display","none");
+        $("#btn-off").css("display","block");
+    });
+    $("#btn-off").on('click', () => {
+        $("#mob-nav").css("display","none");
+        $("#btn-off").css("display","none");
+        $("#btn-on").css("display","block");
+    });
+    AOS.init();
+</script>
+
+
+</body>
+</html>
